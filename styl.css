@@ -1,0 +1,174 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+/* allgemein Schriftgröße für h3  auf 2rem   (Typography) */
+h3 {
+    font-size: 2rem;
+}
+
+li {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+/*  Header startet */
+/*------ Hauptinhalt Bereich ------- */
+main {
+    background-color: #1a1ae8ee;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    overflow: auto;
+
+}
+
+main .header {
+    text-align: center;
+    padding: 2rem 0;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+
+
+
+.p_header {
+    line-height: 1.6;
+    color: rgba(240, 248, 255, 0.509);
+}
+
+/*  header Task ist fertig mit styleing */
+
+
+/*  Styling für Behandlung und Servies_info */
+.behandlung_info {
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 2rem 0;
+    display: flex;
+
+}
+
+.servier_Info {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.servier_Info .card {
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    background-color: rgb(60, 60, 240);
+}
+
+.servier_Info .card h3 {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+    text-decoration: cadetblue;
+    padding: 1rem 0;
+}
+
+.servier_Info .card ul li {
+    margin-bottom: .5rem;
+    margin-top: 0.5rem;
+    transition: all .3s;
+
+}
+
+.servier_Info .card ul li:hover {
+    color: rgba(203, 203, 238, 0.8);
+}
+
+.behandlung_info img {
+    width: 100%;
+    height: 200px;
+}
+
+.footer_Btn {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+
+}
+
+
+
+.btn_behandel {
+    cursor: pointer;
+    margin: 0 auto;
+    color: #ffff;
+    padding: 1rem;
+    border-radius: .8rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    background-color: rgb(227, 103, 103);
+}
+
+
+
+/* servier_Info ist fertig */
+
+
+
+/* Responsive Anpassung */
+
+@media screen and (max-width: 700px) {
+    .behandlung_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servier_Info .card {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .behandlung_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .servier_Info .card {
+        margin: 1rem 0;
+    }
+
+    .footer_Btn {
+        align-items: center;
+    }
+}
